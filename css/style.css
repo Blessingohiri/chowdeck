@@ -1,0 +1,186 @@
+body{
+    min-height: 200vh;
+}
+*{
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+}
+header .container .row{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+header .container .row .image{
+    display: flex;
+    align-items: center;
+}
+header .container .row .image div img{
+    border-radius: 5px;
+}
+.bi-geo-alt{
+    color: green;
+}
+.searchbar{
+    position: relative;
+}
+.form-control{
+    padding-left: 30px;
+}
+.bi-search{
+    position: absolute;
+    left: 20px;
+    top: 9px;
+}   
+
+.admin div{
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.delivery-{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+.delivery-option{
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border: 1px solid green;
+    justify-content: center;
+    background-color: rgb(219, 223, 222);
+    
+    
+} 
+.delivery-option a{
+    border-radius: 5px;
+    height: auto;
+    width: 80%;
+    margin: 3px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.delivery-option a.active{
+    background-color: green;
+    color: white;
+}
+.delivery-option a:hover{
+    background-color: green;
+    color: white;
+}
+.dish-type p{
+    margin: 3px;
+    color: rgba(12, 82, 12, 0.993);
+    font-size: 13px;
+    font-weight: 700;
+
+}
+.dish{
+    display: flex;
+    align-items: center;
+}
+.d-name{
+    font-size: 25px;
+    font-weight: 500;
+}
+.bi-star{
+    font-size: 14px;
+    color: black;
+}
+@media(max-width:991px){
+    .d-rating{
+        margin-left: auto;
+    }
+    .time{
+        display: flex;
+        justify-content: end;
+    }
+}
+
+
+@media(min-width:992px){
+    .dish{
+        order: 1;
+    }
+    .delivery{
+        order: 2!important;
+    }
+    .delivery-option{
+        margin-top: 3px;
+    }
+    .dish-type{
+        order: 3;
+    }
+    .time{
+        order: 4;
+    }
+    .min-order{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+}
+section {
+    padding-top: 100px;
+}
+.nav-pills{
+    overflow-x: scroll;
+    width: 100%;
+    text-wrap: nowrap;
+}
+.food-choice{
+    display: flex;
+    border: 1px solid;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+.add{
+    border-radius: 20px;
+    border: 1px solid grey;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+.duplicate{
+    border-radius: 5px;
+    border: 1px dotted grey;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+.chicken p{
+    font-size: 13px;
+    color: gray;
+}
+.increase{
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: rgb(227, 234, 235);
+    height: 3vh;
+    width: 9vh;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+
+
+}
+
